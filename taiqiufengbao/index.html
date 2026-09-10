@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>台球风暴-台球运动资讯、技巧教学与装备指南</title>
+<meta name="description" content="台球风暴是面向台球爱好者的综合资讯平台，提供中式八球、斯诺克、九球等项目的规则讲解、击球技巧、装备选购建议、赛事动态与入门教学，帮助不同水平的球友系统提升台球水平。">
+<meta name="keywords" content="台球风暴,台球技巧,中式八球,斯诺克,九球,台球装备,台球教学,台球规则">
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --green-deep: #0b3d2e;
+  --green-mid: #14614a;
+  --green-light: #1f8a68;
+  --gold: #d4a94a;
+  --gold-light: #e8c777;
+  --ink: #16201c;
+  --gray: #5c6b64;
+  --bg: #f4f7f5;
+  --card: #ffffff;
+  --line: #dde5e0;
+}
+body {
+  font-family: "PingFang SC", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+.wrap {
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ============ 头部 ============ */
+header.site-header {
+  background: linear-gradient(135deg, #0b3d2e 0%, #14614a 60%, #1a7357 100%);
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+header.site-header::after {
+  content: "";
+  position: absolute;
+  right: -80px;
+  top: -80px;
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(212,169,74,0.22), transparent 70%);
+}
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 16px 0;
+  position: relative;
+  z-index: 2;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.brand-mark {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 32% 30%, #ffffff 0%, #e8c777 22%, #d4a94a 55%, #8a6a1f 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  color: #0b3d2e;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.35);
+  flex-shrink: 0;
+}
+.brand-text h1 {
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  line-height: 1.2;
+}
+.brand-text p {
+  font-size: 12px;
+  color: #bfe0d3;
+  letter-spacing: 2px;
+}
+.top-nav {
+  display: flex;
+  gap: 26px;
+  font-size: 15px;
+  font-weight: 500;
+}
+.top-nav a {
+  color: #d8ece3;
+  padding: 4px 0;
+  border-bottom: 2px solid transparent;
+  transition: 0.25s;
+}
+.top-nav a:hover {
+  color: var(--gold-light);
+  border-bottom-color: var(--gold);
+}
+.header-search {
+  display: flex;
+  align-items: center;
+  background: rgba(255,255,255,0.12);
+  border: 1px solid rgba(255,255,255,0.25);
+  border-radius: 24px;
+  padding: 6px 6px 6px 16px;
+  gap: 8px;
+}
+.header-search input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 14px;
+  width: 150px;
+}
+.header-search input::placeholder {
+  color: #a9cdbf;
+}
+.header-search button {
+  background: var(--gold);
+  color: #0b3d2e;
+  border: none;
+  border-radius: 20px;
+  padding: 6px 16px;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.25s;
+}
+.header-search button:hover {
+  background: var(--gold-light);
+}
+
+/* ============ 首屏 ============ */
+.hero {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 34px;
+  padding: 42px 0 54px;
+  position: relative;
+  z-index: 2;
+}
+.hero-main h2 {
+  font-size: 34px;
+  line-height: 1.35;
+  font-weight: 800;
+  margin-bottom: 18px;
+}
+.hero-main h2 span {
+  color: var(--gold-light);
+}
+.hero-main p {
+  font-size: 15.5px;
+  color: #cfe6dc;
+  max-width: 620px;
+  margin-bottom: 26px;
+}
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+.btn {
+  display: inline-block;
+  padding: 12px 28px;
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: 700;
+  transition: 0.25s;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+.btn-gold {
+  background: linear-gradient(135deg, #e8c777, #d4a94a);
+  color: #0b3d2e;
+  box-shadow: 0 8px 20px rgba(212,169,74,0.35);
+}
+.btn-gold:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 26px rgba(212,169,74,0.45);
+}
+.btn-ghost {
+  border-color: rgba(255,255,255,0.4);
+  color: #eaf5f0;
+}
+.btn-ghost:hover {
+  background: rgba(255,255,255,0.12);
+}
+.hero-side {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.hero-side-card {
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.16);
+  border-radius: 14px;
+  padding: 16px 18px;
+  backdrop-filter: blur(4px);
+}
+.hero-side-card h3 {
+  font-size: 15px;
+  color: var(--gold-light);
+  margin-bottom: 6px;
+}
+.hero-side-card p {
+  font-size: 13.5px;
+  color: #c4ded3;
+}
+.hero-stats {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.hero-stats span {
+  font-size: 12.5px;
+  background: rgba(212,169,74,0.18);
+  border: 1px solid rgba(212,169,74,0.4);
+  color: var(--gold-light);
+  border-radius: 20px;
+  padding: 4px 14px;
+}
+
+/* ============ 通用区块 ============ */
+section {
+  padding: 56px 0;
+}
+.section-head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 30px;
+  border-bottom: 2px solid var(--line);
+  padding-bottom: 14px;
+}
+.section-head h2 {
+  font-size: 25px;
+  font-weight: 800;
+  color: var(--green-deep);
+  position: relative;
+  padding-left: 16px;
+}
+.section-head h2::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 6px;
+  bottom: 6px;
+  width: 5px;
+  border-radius: 3px;
+  background: linear-gradient(180deg, var(--gold), var(--green-light));
+}
+.section-head p {
+  font-size: 14px;
+  color: var(--gray);
+}
+
+/* ============ 分类导航 ============ */
+.cat-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+.cat-card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 24px 20px;
+  transition: 0.28s;
+  position: relative;
+  overflow: hidden;
+}
+.cat-card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, var(--green-light), var(--gold));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: 0.3s;
+}
+.cat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 14px 32px rgba(11,61,46,0.12);
+  border-color: #b9d6c8;
+}
+.cat-card:hover::before {
+  transform: scaleX(1);
+}
+.cat-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: #eaf4ef;
+  color: var(--green-mid);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 14px;
+}
+.cat-card h3 {
+  font-size: 17px;
+  margin-bottom: 8px;
+  color: var(--green-deep);
+}
+.cat-card p {
+  font-size: 13.5px;
+  color: var(--gray);
+}
+
+/* ============ 技巧文章 ============ */
+.article-layout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 34px;
+}
+.article-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.article-item {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 22px 24px;
+  transition: 0.25s;
+}
+.article-item:hover {
+  border-color: #b9d6c8;
+  box-shadow: 0 10px 26px rgba(11,61,46,0.08);
+}
+.article-item .tag {
+  display: inline-block;
+  font-size: 12px;
+  color: var(--green-mid);
+  background: #eaf4ef;
+  border-radius: 4px;
+  padding: 2px 10px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+.article-item h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+  color: var(--ink);
+}
+.article-item h3 a:hover {
+  color: var(--green-light);
+}
+.article-item p {
+  font-size: 14px;
+  color: var(--gray);
+}
+.article-item .meta {
+  margin-top: 12px;
+  font-size: 12.5px;
+  color: #8a9a92;
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+/* ============ 侧栏 ============ */
+.side-panel {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 22px;
+  margin-bottom: 22px;
+}
+.side-panel h3 {
+  font-size: 17px;
+  color: var(--green-deep);
+  margin-bottom: 16px;
+  padding-bottom: 10px;
+  border-bottom: 1px dashed var(--line);
+}
+.rank-list {
+  list-style: none;
+  counter-reset: rank;
+}
+.rank-list li {
+  counter-increment: rank;
+  display: flex;
+  gap: 12px;
+  padding: 9px 0;
+  font-size: 14px;
+  color: #33443c;
+  border-bottom: 1px solid #f0f4f2;
+}
+.rank-list li:last-child {
+  border-bottom: none;
+}
+.rank-list li::before {
+  content: counter(rank);
+  flex-shrink: 0;
+  width: 22px;
+  height: 22px;
+  border-radius: 6px;
+  background: #eaf4ef;
+  color: var(--green-mid);
+  font-size: 12px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rank-list li:nth-child(1)::before {
+  background: linear-gradient(135deg, #e8c777, #d4a94a);
+  color: #4a3608;
+}
+.rank-list li:nth-child(2)::before {
+  background: #d7e3dc;
+  color: #3d5a4e;
+}
+.rank-list li:nth-child(3)::before {
+  background: #ecd9c2;
+  color: #6b4a22;
+}
+.tip-box {
+  background: linear-gradient(135deg, #eef7f2, #e2f0e9);
+  border-left: 4px solid var(--green-light);
+  border-radius: 8px;
+  padding: 16px 18px;
+  font-size: 13.5px;
+  color: #2e4a3e;
+}
+.tip-box strong {
+  color: var(--green-deep);
+}
+
+/* ============ 装备表格 ============ */
+.gear-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--card);
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(11,61,46,0.06);
+  font-size: 14px;
+}
+.gear-table thead {
+  background: var(--green-deep);
+  color: #fff;
+}
+.gear-table th,
+.gear-table td {
+  padding: 14px 18px;
+  text-align: left;
+  border-bottom: 1px solid var(--line);
+}
+.gear-table th {
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+.gear-table tbody tr:hover {
+  background: #f6faf8;
+}
+.gear-table td:first-child {
+  font-weight: 700;
+  color: var(--green-mid);
+}
+
+/* ============ 入门指南 ============ */
+.guide-steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+.step-card {
+  background: var(--card);
+  border-radius: 14px;
+  padding: 26px 22px;
+  border: 1px solid var(--line);
+  position: relative;
+}
+.step-num {
+  font-size: 40px;
+  font-weight: 800;
+  color: #e2ede7;
+  line-height: 1;
+  margin-bottom: 12px;
+}
+.step-card h3 {
+  font-size: 17px;
+  color: var(--green-deep);
+  margin-bottom: 10px;
+}
+.step-card p {
+  font-size: 13.5px;
+  color: var(--gray);
+}
+
+/* ============ FAQ ============ */
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.faq-item {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 20px 24px;
+}
+.faq-item h3 {
+  font-size: 16px;
+  color: var(--green-deep);
+  margin-bottom: 8px;
+  display: flex;
+  gap: 10px;
+}
+.faq-item h3::before {
+  content: "?";
+  flex-shrink: 0;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--green-light);
+  color: #fff;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+.faq-item p {
+  font-size: 14px;
+  color: var(--gray);
+  padding-left: 32px;
+}
+
+/* ============ 页脚 ============ */
+footer.site-footer {
+  background: #0a2e22;
+  color: #a9c8ba;
+  padding: 46px 0 24px;
+  margin-top: 20px;
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr 1fr 1fr;
+  gap: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+.footer-col h4 {
+  color: #fff;
+  font-size: 15px;
+  margin-bottom: 16px;
+}
+.footer-col p,
+.footer-col li {
+  font-size: 13.5px;
+  line-height: 2;
+  list-style: none;
+}
+.footer-col a:hover {
+  color: var(--gold-light);
+}
+.footer-bottom {
+  padding-top: 20px;
+  text-align: center;
+  font-size: 12.5px;
+  color: #7fa294;
+}
+
+/* ============ 响应式 ============ */
+@media (max-width: 980px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+  .cat-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .article-layout {
+    grid-template-columns: 1fr;
+  }
+  .guide-steps {
+    grid-template-columns: 1fr;
+  }
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .top-nav {
+    display: none;
+  }
+}
+@media (max-width: 620px) {
+  .topbar {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .header-search {
+    width: 100%;
+  }
+  .header-search input {
+    flex: 1;
+    width: auto;
+  }
+  .hero-main h2 {
+    font-size: 25px;
+  }
+  .cat-grid {
+    grid-template-columns: 1fr;
+  }
+  .section-head {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+  .gear-table {
+    font-size: 13px;
+  }
+  .gear-table th,
+  .gear-table td {
+    padding: 10px 12px;
+  }
+  section {
+    padding: 40px 0;
+  }
+}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <div class="topbar">
+      <div class="brand">
+        <div class="brand-mark">台球</div>
+        <div class="brand-text">
+          <h1>台球风暴</h1>
+          <p>技巧 · 装备 · 赛事</p>
+        </div>
+      </div>
+      <nav class="top-nav">
+        <a href="#categories">项目分类</a>
+        <a href="#skills">技巧教学</a>
+        <a href="#gear">装备指南</a>
+        <a href="#start">入门必读</a>
+        <a href="#faq">常见问题</a>
+      </nav>
+      <div class="header-search">
+        <input type="text" placeholder="搜索技巧 / 规则 / 装备">
+        <button type="button">搜索</button>
+      </div>
+    </div>
+
+    <div class="hero">
+      <div class="hero-main">
+        <h2>从握杆到走位，<span>系统读懂台球</span>的每一次出杆</h2>
+        <p>台球风暴汇集台球运动的基础规则、击球技巧、战术思路与装备选购建议，覆盖中式八球、斯诺克、美式九球等主流玩法，帮助零基础球友快速上手，也帮进阶玩家找到突破瓶颈的方向。</p>
+        <div class="hero-actions">
+          <a class="btn btn-gold" href="#start">新手入门路线</a>
+          <a class="btn btn-ghost" href="#skills">查看技巧专题</a>
+        </div>
+      </div>
+      <aside class="hero-side">
+        <div class="hero-side-card">
+          <h3>先弄清楚你打的是哪种台球</h3>
+          <p>中式八球、斯诺克、九球在球台尺寸、球数、袋口与规则上差异明显，选对项目再练技巧，效率会高很多。</p>
+        </div>
+        <div class="hero-stats">
+          <span>基础站位</span>
+          <span>瞄准方法</span>
+          <span>杆法控制</span>
+          <span>走位思路</span>
+          <span>防守意识</span>
+        </div>
+      </aside>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- 项目分类 -->
+  <section id="categories">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>台球项目分类</h2>
+        <p>不同玩法对应不同的球台、球组与规则体系</p>
+      </div>
+      <div class="cat-grid">
+        <article class="cat-card">
+          <div class="cat-icon">八</div>
+          <h3>中式八球</h3>
+          <p>国内普及度很高的玩法，使用 1 至 15 号球，分全色与花色两组，先清完本组并打进黑八者胜。节奏适中，适合日常球房对战。</p>
+        </article>
+        <article class="cat-card">
+          <div class="cat-icon">斯</div>
+          <h3>斯诺克</h3>
+          <p>球台更大、袋口更小，以红球与彩球交替击打累计分数。对走位精度和防守能力要求高，是考验综合技术的项目。</p>
+        </article>
+        <article class="cat-card">
+          <div class="cat-icon">九</div>
+          <h3>美式九球</h3>
+          <p>按号码顺序击球，先合法打进 9 号球者胜。开球与连续进攻的观赏性强，节奏快，对母球控制要求细腻。</p>
+        </article>
+        <article class="cat-card">
+          <div class="cat-icon">开</div>
+          <h3>开伦与其它</h3>
+          <p>无袋口、以碰撞次数计分的开伦台球，以及各类花式表演玩法，侧重旋转控制与线路计算，适合拓展手感。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 技巧教学 + 侧栏 -->
+  <section id="skills" style="background:#eef4f0;">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>技巧教学专题</h2>
+        <p>按练习顺序拆解，从稳定出杆到主动走位</p>
+      </div>
+      <div class="article-layout">
+        <div class="article-list">
+          <article class="article-item">
+            <span class="tag">基础动作</span>
+            <h3><a href="#skills">站位、握杆与出杆：稳定性的三个基本功</a></h3>
+            <p>很多失误并非瞄不准，而是身体在出杆瞬间发生了晃动。站姿要求重心稳定、下盘放松；握杆以虎口轻贴、后三指自然收拢为宜，避免用力攥紧；出杆时小臂以肘关节为轴做钟摆运动，手腕尽量保持固定。建议先在无球状态下空杆练习，感受匀速推送的节奏。</p>
+            <div class="meta"><span>阅读约 6 分钟</span><span>适合零基础</span></div>
+          </article>
+          <article class="article-item">
+            <span class="tag">瞄准方法</span>
+            <h3><a href="#skills">假想球与厚薄判断：如何提高瞄准命中率</a></h3>
+            <p>瞄准的核心是找到母球与目标球的接触点。常用的假想球法，是在目标球后方沿进球方向"复制"一颗母球的位置，再让真实母球对准该假想位置出杆。厚薄判断则需要通过大量重复练习建立手感，建议固定球位、固定力度，记录每次偏差方向，逐步修正。</p>
+            <div class="meta"><span>阅读约 7 分钟</span><span>适合入门到进阶</span></div>
+          </article>
+          <article class="article-item">
+            <span class="tag">杆法控制</span>
+            <h3><a href="#skills">高杆、低杆与侧旋：母球走位的基本语言</a></h3>
+            <p>击打母球中心以上为高杆，母球撞击目标球后继续前冲；击打中心以下为低杆，母球会回缩；侧旋则用于改变母球碰库后的反弹角度。练习时建议从定点高低杆开始，先掌握力度与旋转的对应关系，再尝试组合使用。注意杆法效果受击球点、力度和台呢状况共同影响。</p>
+            <div class="meta"><span>阅读约 8 分钟</span><span>适合进阶练习</span></div>
+          </article>
+          <article class="article-item">
+            <span class="tag">战术意识</span>
+            <h3><a href="#skills">走位与防守：把一杆球打成连续得分的机会</a></h3>
+            <p>进攻时提前规划下一颗目标球的理想位置，而不是只考虑当前这一杆能否打进。当没有把握连续进攻时，可以选择把母球藏到障碍球后方，迫使对手犯规。防守同样是得分手段，尤其在斯诺克与中式八球的对局中，安全球的质量往往决定局面走向。</p>
+            <div class="meta"><span>阅读约 7 分钟</span><span>适合进阶球友</span></div>
+          </article>
+        </div>
+
+        <aside>
+          <div class="side-panel">
+            <h3>练习优先级参考</h3>
+            <ol class="rank-list">
+              <li>固定站位与出杆节奏</li>
+              <li>直线球命中稳定性</li>
+              <li>高低杆力度控制</li>
+              <li>库边反弹角度判断</li>
+              <li>连续走位规划</li>
+              <li>安全球与防守选择</li>
+            </ol>
+          </div>
+          <div class="side-panel">
+            <h3>练习小提示</h3>
+            <div class="tip-box">
+              <strong>少量多次优于长时间硬练。</strong>每次练习设定一个明确目标，例如"连续打进 10 颗直线球"，完成后记录成功率和偏差方向，比漫无目的地打球更容易进步。
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- 装备指南 -->
+  <section id="gear">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>台球装备选购指南</h2>
+        <p>按需求挑装备，比盲目追高价更实用</p>
+      </div>
+      <table class="gear-table">
+        <thead>
+          <tr>
+            <th>装备类型</th>
+            <th>关注要点</th>
+            <th>适合人群</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>球杆</td>
+            <td>前节材质、杆头直径、重量与握把粗细，影响手感与出杆稳定性</td>
+            <td>有固定打球习惯、希望提升控球稳定性的球友</td>
+          </tr>
+          <tr>
+            <td>皮头</td>
+            <td>硬度与弧度，硬皮头控球精准，软皮头旋转更强但需适应</td>
+            <td>对杆法效果有要求的中高级玩家</td>
+          </tr>
+          <tr>
+            <td>巧粉</td>
+            <td>增加皮头与母球之间的摩擦，减少打滑与空杆</td>
+            <td>所有台球爱好者，属于日常消耗品</td>
+          </tr>
+          <tr>
+            <td>手套</td>
+            <td>减少手汗对出杆顺滑度的影响，提升长台稳定性</td>
+            <td>手汗较多或在潮湿环境打球的球友</td>
+          </tr>
+          <tr>
+            <td>球杆盒</td>
+            <td>保护球杆不变形、不受潮，分硬盒与软包两类</td>
+            <td>需要携带球杆往返球房的玩家</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- 入门指南 -->
+  <section id="start" style="background:#eef4f0;">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>新手入门三步走</h2>
+        <p>先把动作练对，再谈准度和杆法</p>
+      </div>
+      <div class="guide-steps">
+        <article class="step-card">
+          <div class="step-num">01</div>
+          <h3>熟悉规则与球台</h3>
+          <p>先确定自己要练的项目，了解球数、分组方式、犯规判定和胜负条件。熟悉球台尺寸、袋口位置与库边弹性，能帮助你更早建立空间感。</p>
+        </article>
+        <article class="step-card">
+          <div class="step-num">02</div>
+          <h3>打磨基础动作</h3>
+          <p>重点练习站位、握杆、瞄准和匀速出杆。这个阶段不必追求杆法花样，把直线球打进率稳定下来，后续学习旋转和走位会顺畅很多。</p>
+        </article>
+        <article class="step-card">
+          <div class="step-num">03</div>
+          <h3>加入实战与复盘</h3>
+          <p>通过和不同水平的球友对局，检验技术短板。每局结束后回想失误原因，是瞄准偏差、力度失控还是选择不当，再有针对性地补练。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>常见问题</h2>
+        <p>关于台球学习与练习的高频疑问</p>
+      </div>
+      <div class="faq-list">
+        <article class="faq-item">
+          <h3>零基础应该先学哪种台球？</h3>
+          <p>如果身边球房以中式八球台为主，从中式八球入手比较自然，规则直观、节奏适中。若目标是技术精细化，可以在掌握基础动作后再接触斯诺克。九球适合练习连续进攻与母球控制，可作为补充项目。</p>
+        </article>
+        <article class="faq-item">
+          <h3>每天练多久比较合适？</h3>
+          <p>比起单次长时间练习，更建议保持规律性。每次专注练习 40 到 60 分钟，设定明确目标并记录完成情况，通常比无目的地打两三个小时更有效。练习中注意适当休息，避免因疲劳导致动作变形。</p>
+        </article>
+        <article class="faq-item">
+          <h3>为什么瞄准感觉没问题，球却总是打不进？</h3>
+          <p>常见原因包括出杆瞬间身体晃动、握杆过紧导致杆头偏移、击球点不稳定以及力度控制不当。可以先用空杆练习确认出杆轨迹是否笔直，再逐步加入目标球，排查具体环节。</p>
+        </article>
+        <article class="faq-item">
+          <h3>新手需要自己买球杆吗？</h3>
+          <p>如果只是偶尔体验，使用球房提供的球杆即可。当打球频率稳定、开始在意手感和控球时，可以考虑入手一支适合自己的球杆。选购时以手感顺手、重量合适为先，不必一开始就追求高价。</p>
+        </article>
+        <article class="faq-item">
+          <h3>怎样提高母球走位的准确性？</h3>
+          <p>走位依赖对力度和旋转的预判。练习时可以固定目标球位置，尝试用不同力度和杆法把母球停到指定区域，反复对比实际结果与预期差距。积累足够多的反馈后，判断会越来越准。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>台球风暴</h4>
+        <p>面向台球爱好者的学习与交流平台，整理规则讲解、技巧教学、装备参考与练习方法，帮助不同阶段的球友找到适合自己的提升路径。</p>
+      </div>
+      <div class="footer-col">
+        <h4>内容导航</h4>
+        <ul>
+          <li><a href="#categories">项目分类</a></li>
+          <li><a href="#skills">技巧教学</a></li>
+          <li><a href="#gear">装备指南</a></li>
+          <li><a href="#start">入门必读</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>热门项目</h4>
+        <ul>
+          <li><a href="#categories">中式八球</a></li>
+          <li><a href="#categories">斯诺克</a></li>
+          <li><a href="#categories">美式九球</a></li>
+          <li><a href="#categories">开伦台球</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>练习建议</h4>
+        <ul>
+          <li><a href="#skills">固定动作节奏</a></li>
+          <li><a href="#skills">记录练习数据</a></li>
+          <li><a href="#faq">排查失误原因</a></li>
+          <li><a href="#start">循序渐进提升</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>台球风暴 · 台球运动资讯与技巧分享平台　|　内容仅供学习参考，请以实际规则与场地要求为准</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.querySelectorAll('a[href^="#"]').forEach(function (link) {
+    link.addEventListener('click', function (e) {
+      var targetId = this.getAttribute('href');
+      if (targetId.length > 1) {
+        var target = document.querySelector(targetId);
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      }
+    });
+  });
+</script>
+
+</body>
+  </html>
